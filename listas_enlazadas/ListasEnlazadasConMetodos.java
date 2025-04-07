@@ -90,7 +90,7 @@ public class ListasEnlazadasConMetodos {
         Nodo actual = cabeza;
 
         for (int i = 0  ;i<13 ;i++){
-            Nodo nuevo_nodo = new Nodo(i , null ) ;
+            Nodo nuevo_nodo = new Nodo( "hijo " + i , null ) ;
             actual.setNodo(nuevo_nodo);
             actual = nuevo_nodo ;
         }
@@ -106,16 +106,18 @@ public class ListasEnlazadasConMetodos {
         //ir a un elemento en especifico
 
 
-        System.out.println(lista.getNodo(0));
-
-
-
+        System.out.println(lista.getNodo(3).getDato());
         
 
+        
+        
+/* 
         while (refNodo != null){
             System.out.println(refNodo.getDato());
             refNodo = refNodo.getNodo();
         }
+     */
+
     }
 }
 
