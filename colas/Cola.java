@@ -37,14 +37,16 @@ public class Cola {
         if(this.cabeza == null) {
             this.cabeza = nuevaCola;
             this.cola = nuevaCola;
-        }
-
-        /* recuperamos el elemento que estaba en la colay como la cola no tiene
+        }else {
+            /* recuperamos el elemento que estaba en la colay como la cola no tiene
          siguiente a ese elemento le asignamos el nuevo nodo siguiente que lo que hace 
          es el nuevo nodo toma el lugar del ultimo en la cola */
          
-        this.cola.setNodoSiguiente(nuevaCola);
-        this.cola = nuevaCola;
+            this.cola.setNodoSiguiente(nuevaCola);
+            this.cola = nuevaCola;
+        }
+
+        
     }
 
 
@@ -116,6 +118,7 @@ public class Cola {
  class Nodo {
     private Pedido pedido ;
     private Nodo nodoSiguiente = null ;
+
 
     public Nodo (Pedido pedido , Nodo nodoSiguiente){
         this.pedido = pedido;
